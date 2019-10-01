@@ -1,0 +1,28 @@
+{
+	"name": "iphone-shortcuts",
+	"version": "0.1.0",
+	"description": "JS scripts that generate iPhone Shortcuts.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/amrwc/iphone-shortcuts.git"
+	},
+	"keywords": [
+		"ios",
+		"iphone",
+		"shortcuts",
+		"automation"
+	],
+	"author": "amrwc",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/amrwc/iphone-shortcuts/issues"
+	},
+	"homepage": "https://github.com/amrwc/iphone-shortcuts#readme",
+	"dependencies": {
+		"@joshfarrant/shortcuts-js": "^0.5.0"
+	}
+}
