@@ -6,9 +6,7 @@
  * Turns off WiFi, Bluetooth and celullar data, and maximally dims the screen.
  */
 
-const fs = require('fs');
-const path = require('path');
-const { getOutputPath, txtUtils } = require('../utils');
+const { writeShortcutToFile } = require('../utils');
 const { buildShortcut } = require('@joshfarrant/shortcuts-js');
 const {
 	setWiFi,
@@ -27,11 +25,4 @@ const actions = [
 ];
 
 const shortcut = buildShortcut(actions);
-const filePath = path.resolve(getOutputPath(), `${SHORTCUT_NAME}.shortcut`);
-fs.writeFile(filePath, shortcut, err => {
-	if (err) {
-		console.error(err);
-		process.exit(err.code);
-	}
-	console.info(`${txtUtils('green')}'${SHORTCUT_NAME}' shortcut created.`);
-});
+writeShortcutToFile(shortcut, SHORTCUT_NAME);
