@@ -1,10 +1,13 @@
+#!/usr/bin/env node
+
 /**
- * iPhone Shortcuts
+ * iOS Shortcuts
  *
- * JS scripts that generate iPhone shortcuts.
+ * JS scripts that generate shortcuts for the iOS Shortcuts app.
  *
  * @author amrwc
  * @license MIT
  */
 
-// TODO: All shortcut-generating scripts will go here.
+// Generate all shortcuts
+require('./shortcuts/good-night');
