@@ -5,6 +5,7 @@ JS scripts that generate shortcuts for the iOS [Shortcuts app](https://support.a
 ## Setup and usage
 
 ```bash
+git clone --recurse-submodules git@github.com:amrwc/ios-shortcuts.git
 cd ios-shortcuts/src/
 npm install
 ```
